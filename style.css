@@ -109,15 +109,18 @@ section{
   font-weight: 700;
   margin-top: 1.5rem;
   line-height: 1;
+  white-space: nowrap;
 }
 .home-content h3{
   margin: 1rem 0;
   font-size: 2.5rem;
+  white-space: nowrap;
 }
 .home-content p{
   font-size: 2rem;
   font-weight: 500;
   line-height: 1.8;
+  white-space: nowrap;
 }
 .home-img img{
   width: 30vw;
@@ -181,6 +184,7 @@ section{
   background-color: var(--main-color);
   color: black;
 }
+/*
 .about{
   display: flex;
   justify-content: center;
@@ -209,6 +213,7 @@ section{
 .about-content .btn{
   margin: 3rem 0;
 }
+*/
 
 ::-webkit-scrollbar{
   width: 20px;
@@ -221,22 +226,23 @@ section{
 ::-webkit-scrollbar-track{
   background-color: var(--bg-color);
 }
+
 .heading{
   text-align: center;
   font-size: 7rem;
   margin: 5rem;
 }
-
-.services{
+/*
+.education{
   background-color: var(--bg-color);
   color: black;
 }
-.services h2{
+.education h2{
   color: var(--text-color);
 }
-.services-container{
+.education-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
   gap: 2.5rem;
 }
@@ -278,6 +284,7 @@ section{
 .service-info i{
   font-size: 8rem;
 }
+*/
 .projects{
   background-color: var(--second-bg-color);
 }
@@ -432,4 +439,45 @@ section{
   .contact{
     flex-direction: column;
   }
+}
+.my-contact{
+  background-color: var(--second-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.my-contact address{
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.contact-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.contact-item i{
+  font-size: 3.5rem;
+  color: var(--main-color);
+  background: var(--bg-color);
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+  box-shadow: 0 0 10px transparent;
+  transition: 0.3s ease-in-out;
+}
+.contact-item:hover i{
+  box-shadow: 0 0 20px var(--main-color);
+  transform: scale(1.1);
+}
+.contact-item a, 
+.contact-item strong,
+.contact-item span{
+  color: var(--text-color);
+  transform: translateX(5px);
 }
