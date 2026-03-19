@@ -96,35 +96,55 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15rem;
+  gap: 8rem;
+  
+  padding: 1rem;
+
+  /* background: linear-gradient(rgba(8, 8, 8, 0.6),  
+  rgba(8, 8, 8, 0.5)), url(back.png) no-repeat center center;*/
+  background: url(back.png) no-repeat center center;
+  background-size: cover;
+
+  position: relative;
+  overflow: hidden;
 }
+/*
 .home-content{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
+}*/
+.home-content{
+  background: rbga(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(12px);
+
+  padding: 2.5rem;
+  border-radius: 2rem;
+  text-align: right;
 }
 .home-content h1{
   font-size: 7rem;
   font-weight: 700;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   line-height: 1;
   white-space: nowrap;
 }
 .home-content h3{
-  margin: 1rem 0;
+  margin: 0.2rem 0;
   font-size: 2.5rem;
   white-space: nowrap;
 }
 .home-content p{
   font-size: 2rem;
   font-weight: 500;
-  line-height: 1.8;
+  line-height: 1.4;
   white-space: nowrap;
 }
 .home-img img{
-  width: 30vw;
-  border-radius: 50rem;
+  width: 25vw;
+  border-radius: 40rem;
   box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;
 }
@@ -139,7 +159,7 @@ section{
   align-items: center;
   font-size: 3rem;
   padding: 1rem;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.3);
   border: 2px solid var(--main-color);
   border-radius: 50%;
   color: var(--main-color);
@@ -148,7 +168,7 @@ section{
 }
 .social-icons a:hover{
   color: var(--main-color);
-  background-color: var(--main-color);
+  background-color: var(--main-color); 
   transform: scale(1.2)translateY(-5px);
   box-shadow: 0 0 25px var(--main-color);
 }
@@ -183,6 +203,11 @@ section{
   box-shadow: 0 0 25px var(--main-color);
   background-color: var(--main-color);
   color: black;
+}
+.home-content .btn-group{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.2rem;
 }
 /*
 .about{
@@ -290,7 +315,7 @@ section{
 }
 .projects-box{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   place-items: center;
   gap: 3rem;
   row-gap: 5rem;
