@@ -25,7 +25,7 @@ body{
   width: 100%;
   top: 0;
   left: 0;
-  padding: 4rem 15%;
+  padding: 2rem 15%;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   display: flex;
@@ -34,7 +34,7 @@ body{
   z-index: 1000;
 }
 #menu-icon{
-  font-size: 3.5rem;
+  font-size: 5rem;
   color: var(--main-color);
   display: none;
 }
@@ -101,9 +101,9 @@ section{
   padding: 1rem;
 
   /* background: linear-gradient(rgba(8, 8, 8, 0.6),  
-  rgba(8, 8, 8, 0.5)), url(back.png) no-repeat center center;*/
+  rgba(8, 8, 8, 0.5)), url(back.png) no-repeat center center;
   background: url(back.png) no-repeat center center;
-  background-size: cover;
+  background-size: cover; */
 
   position: relative;
   overflow: hidden;
@@ -152,6 +152,65 @@ section{
   box-shadow: 0 0 25px var(--main-color),
               0 0 50px var(--main-color),
               0 0 100px var(--main-color);
+}
+.home-content, .home-img{
+  position: relative;
+  z-index: 10;
+}
+.bg-layer{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.sea-bg{
+  left: 0;
+  background: url(back.PNG) no-repeat center bottom;
+  background-size: cover;
+  z-index: 0;
+}
+.path-bg{
+  left: 0;
+  background: url(path.PNG) no-repeat center bottom;
+  background-size: cover;
+  z-index: 2;
+  overflow: hidden;
+}
+.bridge-bg{
+  left: 0;
+  background: url(bridge.PNG) no-repeat left bottom;
+  background-size: cover;
+  z-index: 1;
+  animation: slideInLeft 1.5s ease-in-out forwards;
+  overflow: hidden;
+}
+.house-bg{
+  right: 0;
+  background: url(house.PNG) no-repeat right bottom;
+  background-size: cover;
+  z-index: 1;
+  animation: slideInRight 1.5s ease-in-out forwards;
+  overflow: hidden;
+}
+@keyframes slideInLeft{
+  0%{
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInRight{
+  0%{
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 .social-icons a{
   display: inline-flex;
