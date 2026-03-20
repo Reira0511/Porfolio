@@ -163,24 +163,30 @@ section{
   width: 100%;
   height: 100%;
 }
-.sea-bg{
+.sky-bg{
   left: 0;
-  background: url(back.PNG) no-repeat center bottom;
+  background: url(sky.PNG) no-repeat center bottom;
   background-size: cover;
   z-index: 0;
+}
+.building-bg{
+  left: 0;
+  background: url(building.PNG) no-repeat center bottom;
+  background-size: cover;
+  z-index: 2;
 }
 .path-bg{
   left: 0;
   background: url(path.PNG) no-repeat center bottom;
   background-size: cover;
-  z-index: 2;
+  z-index: 4;
   overflow: hidden;
 }
 .bridge-bg{
   left: 0;
   background: url(bridge.PNG) no-repeat left bottom;
   background-size: cover;
-  z-index: 1;
+  z-index: 3;
   animation: slideInLeft 1.5s ease-in-out forwards;
   overflow: hidden;
 }
@@ -188,9 +194,41 @@ section{
   right: 0;
   background: url(house.PNG) no-repeat right bottom;
   background-size: cover;
-  z-index: 1;
+  z-index: 3;
   animation: slideInRight 1.5s ease-in-out forwards;
   overflow: hidden;
+}
+#stars{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+.star{
+  box-shadow: 0 0 8px white;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.8;
+
+  animation: twinckle linear infinite;
+}
+@keyframes twinckle{
+  0%, 100%{
+    opacity: 0.1;
+    transform: scale(0.8);
+  }
+  50%{
+    opacity: 1;
+    transform: scale(1.2);
+    box-shadow: 0 0 15px white;
+  }
 }
 @keyframes slideInLeft{
   0%{
