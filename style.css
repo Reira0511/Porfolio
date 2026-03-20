@@ -510,4 +510,108 @@ section{
   color: white;
   border-bottom: 3px solid transparent;
   transition: 0.3s ease-in-out;
-}
+}
+.footer ul li a:hover{
+  border-bottom: 3px solid var(--main-color);
+}
+.footer .copyright{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 16px;
+}
+
+@media(max-width:1285px){
+  #menu-icon{
+    display: block;
+  }
+  .navbar{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 50%;
+    padding: 1rem 3rem;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom-left-radius: 2rem;
+    border-left: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+  }
+  .navbar a{
+    display: black;
+    font-size: 2rem;
+    margin: 3rem 0;
+    color: var(--text-color);
+  }
+  .navbar.active{
+    display: block;
+  }
+  .gredient-btn{
+    display: none;
+  }
+  .home{
+    flex-direction: column-reverse;
+    margin: 5rem 0;
+    gap: 5rem;
+  }
+  .home-content{
+    align-items: center;
+    text-align: center;
+  }
+  .home-img img{
+    width: 56vw;
+  }
+  .about{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .about h2{
+    text-align:  center;
+    margin: 2rem 0;
+  }
+  .about i{
+    width: 52vw;
+  }
+  .contact{
+    flex-direction: column;
+  }
+}
+.my-contact{
+  background-color: var(--second-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.my-contact address{
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.contact-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.contact-item i{
+  font-size: 3.5rem;
+  color: var(--main-color);
+  background: var(--bg-color);
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid var(--main-color);
+  box-shadow: 0 0 10px transparent;
+  transition: 0.3s ease-in-out;
+}
+.contact-item:hover i{
+  box-shadow: 0 0 20px var(--main-color);
+  transform: scale(1.1);
+}
+.contact-item a, 
+.contact-item strong,
+.contact-item span{
+  color: var(--text-color);
+  transform: translateX(5px);
+}
