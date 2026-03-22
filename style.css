@@ -536,7 +536,6 @@ section{
   margin-top: 40px;
   font-size: 16px;
 }
-/*
 @media(max-width:1285px){
   #menu-icon{
     display: block;
@@ -592,8 +591,21 @@ section{
   .contact{
     flex-direction: column;
   }
+  .home-content{
+    max-width: 90%;
+    text-align: center;
+    padding: 2rem;
+  }
+  .bottom-row{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .action-group{
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }
-*/
 .my-contact{
   background-color: var(--second-bg-color);
   display: flex;
