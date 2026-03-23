@@ -540,6 +540,10 @@ section{
   #menu-icon{
     display: block;
   }
+  .logo{
+    font-size: 2rem;
+    white-space: nowrap;
+  }
   .navbar{
     position: absolute;
     top: 100%;
@@ -552,20 +556,28 @@ section{
     border-bottom: 2px solid var(--main-color);
   }
   .navbar a{
-    display: black;
-    font-size: 2rem;
-    margin: 3rem 0;
-    color: var(--text-color);
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0rem;
   }
   .navbar.active{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1.5rem;
   }
   .gredient-btn{
     display: none;
   }
+  .header{
+    padding: 1.5rem 5%;
+  }
   .home{
     flex-direction: column-reverse;
-    margin: 5rem 0;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
     gap: 5rem;
   }
   .home-content{
@@ -592,18 +604,64 @@ section{
     flex-direction: column;
   }
   .home-content{
-    max-width: 90%;
+    max-width: 95%;
     text-align: center;
-    padding: 2rem;
+    padding: 2.5rem 1.5rem;
+  }
+  .home-content h1{
+    font-size: 4.5rem;
+    white-space: normal;
+  }
+  .home-content h3{
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+    white-space: normal;
+  }
+  .home-content p{
+    font-size: 1.5rem;
+  }
+  .home-img img{
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
   }
   .bottom-row{
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 2rem;
+    margin-top: 2rem;
   }
   .action-group{
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 1.5rem;
+    width: 100%;
+  }
+  .home-content .social-icons{
+    justify-content: center;
+  }
+  .home-content .btn-group{
+    justify-content: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .projects-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .projects-content .heading h2{
+    font-size: 15rem;
+    display: block !important;
+    text-align: center !important;
+    width: 100% !important;
+    margin: 0 auto 2rem auto !important;
   }
 }
 .my-contact{
