@@ -6,6 +6,11 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 }
 
+window.onscroll = () => {
+  menuIcon.classList.remove('bx-x');
+  navbar.classList.remove('active');
+}
+
 
 const contactForm = document.getElementById('contact-form');
 

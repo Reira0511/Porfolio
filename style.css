@@ -536,9 +536,12 @@ section{
   margin-top: 40px;
   font-size: 16px;
 }
+
+
 @media(max-width:1285px){
   #menu-icon{
     display: block;
+    cursor: pointer;
   }
   .logo{
     font-size: 2rem;
@@ -547,26 +550,23 @@ section{
   .navbar{
     position: absolute;
     top: 100%;
-    right: 0;
-    width: 50%;
+    left: 0;
+    width: 100%;
     padding: 1rem 3rem;
     background: rgba(0, 0, 0, 0.8);
-    border-bottom-left-radius: 2rem;
-    border-left: 2px solid var(--main-color);
+    border-top: 1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0 ,0, 0, 0.2);
     border-bottom: 2px solid var(--main-color);
+    display: none;
   }
   .navbar a{
-    display: inline-block;
-    font-size: 1.4rem;
-    margin: 0rem;
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+    text-align: center;
   }
   .navbar.active{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 1rem;
-    gap: 1.5rem;
+    display: block;
   }
   .gredient-btn{
     display: none;
@@ -583,6 +583,10 @@ section{
   .home-content{
     align-items: center;
     text-align: center;
+  }
+  .home-content .social-icons a{
+    color: #3f2dc2;
+    border: #3f2dc2;
   }
   .home-img img{
     width: 30vw;
@@ -650,18 +654,35 @@ section{
     width: 100%;
     margin-top: 1rem;
   }
-  .projects-content{
+  .projects{
+    padding-top: 10rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .project-content{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
+    position: relative;
   }
-  .projects-content .heading h2{
-    font-size: 15rem;
-    display: block !important;
-    text-align: center !important;
-    width: 100% !important;
-    margin: 0 auto 2rem auto !important;
+  .projects .heading{
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+  }
+  #turing{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
   }
 }
 .my-contact{
