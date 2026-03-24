@@ -790,6 +790,36 @@ section{
     white-space: nowrap;
     font-size: 1.4rem;
   }
+  .contact .heading{
+    margin-bottom: 1.5rem;
+  }
+  .contact form{
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0;
+    gap: 1rem;
+    width: 100%;
+  }
+  .contact form .input-group,
+  .contact form .input-group2,
+  .contact form .input-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
+  .contact form .input-box input,
+  .contact form textarea,
+  .contact form .btn{
+    width: 100%;
+    margin: 0;
+  }
+  .contact form textarea{
+    min-height: 180px;
+  }
+  .contact form .btn{
+    align-self: stretch;
+  }
 }
 .my-contact{
   background-color: var(--second-bg-color);
