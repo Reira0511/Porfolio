@@ -602,7 +602,7 @@ section{
 }
 
 
-@media(max-width:1285px){
+@media(max-width: 768px){
   html, body{
     overflow-x: hidden;
   }
