@@ -51,8 +51,8 @@ body{
 span{
   background: linear-gradient(
     270deg,
-    #6d98ed 10%,
-    #7ae4e9 100%
+    #443bf0 10%,
+    #1aa4ef 100%
   );
   background-clip: text;
   color: transparent;
@@ -161,7 +161,7 @@ section{
   height: 12vw;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid rgba(45, 49, 101, 0.3);
+  border: 2px solid var(--main-color);
   /*box-shadow: 0 0 25px var(--main-color);
   transition: 0.4s ease-in-out;*/
 }
@@ -630,8 +630,8 @@ section{
     z-index: 10;
   }
   .home-content .social-icons a{
-    color: #09539e;
-    border: #09539e;
+    color: var(--main-color);
+    border: var(--main-color);
   }
   .home-img img{
     width: 30vw;
@@ -774,6 +774,21 @@ section{
     justify-content: center;
     width: 100%;
     position: relative;
+  }
+  .my-contact address{
+    width: 100%;
+    max-width: 100%;
+  }
+  .contact-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: nowrap;
+  }
+  .address-item .address-text{
+    white-space: nowrap;
+    font-size: 1.4rem;
   }
 }
 .my-contact{

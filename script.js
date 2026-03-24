@@ -63,7 +63,7 @@ tmpStar.style.animationDelay = '-' + (Math.random() * 5) + 's';
 document.getElementById('stars').appendChild(tmpStar);
 }
 document.addEventListener('DOMContentLoaded', () => {
-  createStars(250);
+  createStars(200);
 });
 /*
 function selectStars(){
