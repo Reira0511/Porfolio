@@ -170,4 +170,11 @@ document.addEventListener('DOMContentLoaded', () => {
     ctx.arc(headX, headTopY, 6, 0, Math.PI * 2);
     ctx.fillStyle = 'white';
     ctx.shadowBlur = 15;
-    ctx.shadowColor = 
+    ctx.shadowColor = '#5468e8';
+    ctx.fill();
+    ctx.shadowBlur = 0;
+
+    requestAnimationFrame(draw);
+  }
+  draw();
+});

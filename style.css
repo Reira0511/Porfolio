@@ -586,14 +586,14 @@ section{
     width: 100%;
     height: 55%;
     bottom: 0;
-    transform: translateY(100%) scale(2.5);
+    transform: translateY(100%) scale(2.3);
     opacity: 0;
     animation: slideUp 1.2s ease-out forwards;
     background-size: contain;
   }
   .bridge-bg{
-    left: 70%;
-    height: 52%;
+    left: 62%;
+    height: 48%;
     background-image: url(bridge.PNG);
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -602,7 +602,8 @@ section{
     animation-delay: 0.2s;
   }
   .house-bg{
-    right: 35%;
+    right: 30%;
+    height: 50%;
     background-image: url(house.PNG);
     background-repeat: no-repeat;
     background-position: right bottom;
@@ -612,13 +613,16 @@ section{
   }
   @keyframes slideUp {
     0%{
-      transform: translateY(100%) scale(2.5);
+      transform: translateY(100%) scale(2.3);
       opacity: 0;
     }
     100%{
-      transform: translateY(0) scale(2.5);
+      transform: translateY(0) scale(2.3);
       opacity: 1;
     }
+  }
+  .building-bg{
+    transform: translateY(-100px);
   }
   .home-content{
     align-items: center;
@@ -652,6 +656,16 @@ section{
     max-width: 95%;
     text-align: center;
     padding: 2.5rem 1.5rem;
+    transform: translateY(70px);
+  }
+  .home-content .action-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 2rem;
   }
   .home-content h1{
     font-size: 4.5rem;
@@ -667,33 +681,47 @@ section{
     font-size: 1.5rem;
   }
   .home-img img{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .home-img{
     flex-shrink: 0;
-    aspect-ratio: 1 / 1;
-    margin: 0 auto;
   }
   .bottom-row{
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+    width: 100%;
   }
-  .action-group{
+  .home-content .action-group{
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1.5rem;
-    width: 100%;
+    gap: 1rem;
+    width: auto;
   }
   .home-content .social-icons{
+    display: flex;
     justify-content: center;
+    gap: 1rem;
+  }
+  .home-content .social-icons a{
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    margin: 0;
   }
   .home-content .btn-group{
+    justify-content: flex;
     justify-content: center;
-    width: 100%;
-    margin-top: 1rem;
+    width: auto;
+    margin-top: 0;
   }
   .projects{
     padding-top: 10rem;
