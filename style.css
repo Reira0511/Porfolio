@@ -538,10 +538,10 @@ section{
   object-fit: cover;
 }
 .project-card h3{
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .project-card p{
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 
 .contact{
