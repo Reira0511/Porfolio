@@ -177,26 +177,26 @@ section{
 }
 .sky-bg{
   left: 0;
-  background: url(sky.PNG) no-repeat center bottom;
+  background: url(home/sky.PNG) no-repeat center bottom;
   background-size: cover;
   z-index: 0;
 }
 .building-bg{
   left: 0;
-  background: url(building.PNG) no-repeat center bottom;
+  background: url(home/building.PNG) no-repeat center bottom;
   background-size: cover;
   z-index: 2;
 }
 .path-bg{
   left: 0;
-  background: url(path.PNG) no-repeat center bottom;
+  background: url(home/path.PNG) no-repeat center bottom;
   background-size: cover;
   z-index: 4;
   overflow: hidden;
 }
 .bridge-bg{
   left: 0;
-  background: url(bridge.PNG) no-repeat left bottom;
+  background: url(home/bridge.PNG) no-repeat left bottom;
   background-size: cover;
   z-index: 3;
   animation: slideInLeft 1.5s ease-in-out forwards;
@@ -204,7 +204,7 @@ section{
 }
 .house-bg{
   right: 0;
-  background: url(house.PNG) no-repeat right bottom;
+  background: url(home/house.PNG) no-repeat right bottom;
   background-size: cover;
   z-index: 3;
   animation: slideInRight 1.5s ease-in-out forwards;
@@ -658,7 +658,7 @@ section{
   .bridge-bg{
     left: 62%;
     height: 48%;
-    background-image: url(bridge.PNG);
+    background-image: url(home/bridge.PNG);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: contain;
@@ -668,7 +668,7 @@ section{
   .house-bg{
     right: 30%;
     height: 50%;
-    background-image: url(house.PNG);
+    background-image: url(home/house.PNG);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: contain;
