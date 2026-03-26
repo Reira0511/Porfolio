@@ -668,7 +668,8 @@ section{
   .house-bg{
     right: 30%;
     height: 50%;
-    background-image: url(home/house.PNG);
+    background-image: url(home/house.PNG
+    );
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: contain;
