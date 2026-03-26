@@ -1,17 +1,13 @@
 # Personal Project Portfolio
 <pre>
-├── example.json
-├── index.html
-├── index.js
-├── package.json
-├── package-lock.json
 ├── README.md
-└── src
-    ├── app.js
-    ├── models.js
-    ├── routes.js
-    └── utils
-        ├── another.js
-        ├── constants.js
-        └── index.js
+├── index.html
+├── script.js
+├── style.css
+├── home
+│   └──  home section background images
+├── profile
+│   └──  profile image and resume
+├── project
+│   └──  project card images
 </pre>
